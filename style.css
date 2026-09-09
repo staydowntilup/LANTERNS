@@ -1,0 +1,180 @@
+/*Base page setup: dark background*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0 1.5rem 4rem;
+  background-color: #0a0e14; /* deep space */
+  background-image:
+    radial-gradient(1px 1px at 20% 30%, rgba(255,255,255,0.6) 50%, transparent 51%),
+    radial-gradient(1px 1px at 60% 70%, rgba(255,255,255,0.4) 50%, transparent 51%),
+    radial-gradient(2px 2px at 80% 20%, rgba(255,255,255,0.5) 50%, transparent 51%),
+    radial-gradient(1px 1px at 40% 85%, rgba(255,255,255,0.35) 50%, transparent 51%);
+  color: #e8ecef;
+  font-family: Georgia, 'Times New Roman', serif;
+  line-height: 1.6;
+}
+
+/* Center column */
+main {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* Header band */
+header {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 2.5rem 0 1.25rem;
+  border-bottom: 3px solid var(--accent, #33ff66);
+}
+
+header h1 {
+  font-family: 'Orbitron', 'Trebuchet MS', sans-serif;
+  font-size: 2.1rem;
+  letter-spacing: 0.03em;
+  margin: 0 0 0.4rem;
+  color: var(--accent, #33ff66);
+  text-shadow: 0 0 12px rgba(51, 255, 102, 0.25);
+}
+
+header p.subtitle {
+  margin: 0;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-style: italic;
+  color: #b7c0c9;
+  font-size: 1rem;
+}
+
+/*image for each character*/
+figure.hero {
+  margin: 1.75rem auto;
+  text-align: center;
+}
+
+figure.hero img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid var(--accent, #33ff66);
+  border-radius: 4px;
+  box-shadow: 0 0 22px rgba(51, 255, 102, 0.2);
+}
+
+figure.hero figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  color: #8a9199;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+/* Paragraph style 1 */
+p.field-report {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  color: #dfe6ec;
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
+/* Paragraph style 2 */
+p.ring-log {
+  font-family: 'Courier New', monospace;
+  color: var(--accent, #33ff66);
+  font-size: 0.95rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 3px solid var(--accent, #33ff66);
+  padding: 0.75rem 1rem;
+}
+
+/* Paragraph style 3*/
+p.oath-reflection {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  color: var(--accent-soft, #f2c14e);
+  font-size: 1.1rem;
+}
+
+/*bulleted list*/
+ul.trait-list {
+  font-family: 'Trebuchet MS', sans-serif;
+  color: #dfe6ec;
+  padding-left: 1.4rem;
+}
+
+ul.trait-list li {
+  margin-bottom: 0.5rem;
+}
+
+ul.trait-list li::marker {
+  color: var(--accent, #33ff66);
+}
+
+/*table used on the Guy Gardner page*/
+table.stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 0.95rem;
+}
+
+table.stats-table caption {
+  text-align: left;
+  color: #8a9199;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+table.stats-table th,
+table.stats-table td {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0.55rem 0.75rem;
+  text-align: left;
+}
+
+table.stats-table th {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--accent, #33ff66);
+}
+
+table.stats-table tr:nth-child(even) td {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/*Navigation links between the three pages*/
+nav.corps-links {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+nav.corps-links a {
+  color: var(--accent, #33ff66);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav.corps-links a:hover,
+nav.corps-links a:focus {
+  text-decoration: underline;
+}
+
+/* Hal Jordan*/
+body.theme-hal {
+  --accent: #33ff66;
+  --accent-soft: #f2c14e;
+}
+
+/* Guy Gardner*/
+body.theme-guy {
+  --accent: #33ff66;
+  --accent-soft: #e74c3c;
+}
+
+/* Kyle Rayner */
+body.theme-kyle {
+  --accent: #33ff66;
+  --accent-soft: #4fc3f7;
+}

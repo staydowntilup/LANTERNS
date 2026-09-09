@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" role="img" aria-labelledby="avatarTitle">
+  <title id="avatarTitle">Illustrated avatar of the site creator wearing a green ring</title>
+  <circle cx="110" cy="110" r="108" fill="#11161f" stroke="#33ff66" stroke-width="3"/>
+
+  <!-- shoulders -->
+  <path d="M30 210 Q110 150 190 210 L190 220 L30 220 Z" fill="#1b2230"/>
+
+  <!-- neck -->
+  <rect x="95" y="128" width="30" height="24" fill="#c98f66"/>
+
+  <!-- head -->
+  <circle cx="110" cy="96" r="42" fill="#d9a374"/>
+
+  <!-- hair -->
+  <path d="M68 90 Q66 48 110 46 Q154 48 152 90 Q140 66 110 66 Q80 66 68 90Z" fill="#2b1c12"/>
+
+  <!-- simple face -->
+  <circle cx="94" cy="98" r="4" fill="#0a0e14"/>
+  <circle cx="126" cy="98" r="4" fill="#0a0e14"/>
+  <path d="M96 116 Q110 124 124 116" fill="none" stroke="#0a0e14" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- raised hand with glowing ring -->
+  <circle cx="168" cy="150" r="16" fill="#d9a374"/>
+  <circle cx="168" cy="150" r="8" fill="#33ff66"/>
+  <circle cx="168" cy="150" r="16" fill="none" stroke="#33ff66" stroke-width="2" opacity="0.6"/>
+</svg>

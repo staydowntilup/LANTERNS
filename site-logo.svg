@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">Corps Files site logo: a stylized power ring over a lantern silhouette</title>
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#33ff66" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#33ff66" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <circle cx="100" cy="100" r="95" fill="url(#glow)"/>
+
+  <!-- lantern body -->
+  <path d="M78 118 L70 165 Q100 178 130 165 L122 118 Z"
+        fill="#0a0e14" stroke="#33ff66" stroke-width="4"/>
+  <rect x="92" y="100" width="16" height="22" fill="#0a0e14" stroke="#33ff66" stroke-width="4"/>
+  <path d="M84 100 Q100 84 116 100" fill="none" stroke="#33ff66" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- ring -->
+  <circle cx="100" cy="72" r="34" fill="none" stroke="#33ff66" stroke-width="8"/>
+  <circle cx="100" cy="72" r="12" fill="#33ff66"/>
+  <path d="M100 40 L106 58 L100 66 L94 58 Z" fill="#f2c14e"/>
+</svg>

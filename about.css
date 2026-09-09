@@ -1,0 +1,175 @@
+/* ============================================================
+   ABOUT PAGE STYLESHEET — "Emerald Signal" palette
+
+   COLOR PALETTE
+   --space-black : #0a0e14   deep space background
+   --panel-navy  : #131a24   slightly-lifted panel background
+   --corps-green : #2ecc71   primary accent (headings, links, borders)
+   --ring-glow   : #33ff66   bright glow accent (hover, highlights)
+   --power-gold  : #f2c14e   secondary accent (pull-quote, badges)
+   --star-white  : #e8ecef   primary body text
+   --dim-slate   : #8a9199   muted text / captions / meta
+
+   FONTS
+   Headings : 'Orbitron'  (sans-serif, geometric, sci-fi display face)
+   Body     : 'Rajdhani'  (sans-serif, condensed, easy to read at length)
+   ============================================================ */
+
+:root {
+  --space-black: #0a0e14;
+  --panel-navy: #131a24;
+  --corps-green: #2ecc71;
+  --ring-glow: #33ff66;
+  --power-gold: #f2c14e;
+  --star-white: #e8ecef;
+  --dim-slate: #8a9199;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body.about-page {
+  margin: 0;
+  padding: 0 1.5rem 4rem;
+  background-color: var(--space-black);
+  color: var(--star-white);
+  font-family: 'Rajdhani', 'Trebuchet MS', sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.about-wrap {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Header / masthead */
+.about-header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 2.5rem 0 1.5rem;
+  border-bottom: 3px solid var(--corps-green);
+}
+
+.about-header img.logo {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+}
+
+.about-header h1 {
+  font-family: 'Orbitron', 'Trebuchet MS', sans-serif;
+  font-size: 1.9rem;
+  letter-spacing: 0.03em;
+  margin: 0 0 0.3rem;
+  color: var(--corps-green);
+  text-shadow: 0 0 12px rgba(51, 255, 102, 0.25);
+}
+
+.about-header p.tagline {
+  margin: 0;
+  font-style: italic;
+  color: var(--dim-slate);
+}
+
+/* Site nav back to the roster */
+nav.site-nav {
+  margin-top: 1.5rem;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.85rem;
+}
+
+nav.site-nav a {
+  color: var(--corps-green);
+  text-decoration: none;
+  margin-right: 1.25rem;
+}
+
+nav.site-nav a:hover,
+nav.site-nav a:focus {
+  color: var(--ring-glow);
+  text-decoration: underline;
+}
+
+/* Creator portrait */
+figure.creator {
+  float: right;
+  width: 180px;
+  margin: 0.25rem 0 1.5rem 1.75rem;
+  text-align: center;
+}
+
+figure.creator img {
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid var(--corps-green);
+  box-shadow: 0 0 20px rgba(51, 255, 102, 0.2);
+  background: var(--panel-navy);
+}
+
+figure.creator figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  color: var(--dim-slate);
+}
+
+/* Body copy */
+.about-wrap h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--corps-green);
+  font-size: 1.2rem;
+  margin-top: 2.25rem;
+}
+
+.about-wrap p {
+  color: var(--star-white);
+}
+
+.about-wrap p.pull-quote {
+  border-left: 3px solid var(--power-gold);
+  color: var(--power-gold);
+  font-style: italic;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  margin: 1.75rem 0;
+}
+
+/* Social links */
+ul.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin: 1.5rem 0 0;
+  clear: both;
+}
+
+ul.social-links li a {
+  display: inline-block;
+  padding: 0.55rem 1.05rem;
+  border: 1px solid var(--corps-green);
+  border-radius: 999px;
+  color: var(--corps-green);
+  text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+ul.social-links li a:hover,
+ul.social-links li a:focus {
+  background: var(--corps-green);
+  color: var(--space-black);
+}
+
+footer.about-footer {
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--dim-slate);
+  font-size: 0.85rem;
+}
