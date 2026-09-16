@@ -1,20 +1,4 @@
-/* ============================================================
-   STYLESHEET
-
-   COLOR PALETTE
-   --space-black : #0a0e14 
-   --panel-navy  : #131a24 
-   --corps-green : #2ecc71 
-   --ring-glow   : #33ff66   
-   --power-gold  : #f2c14e 
-   --star-white  : #e8ecef   primary body text
-   --dim-slate   : #8a9199   muted text
-
-   FONTS
-   Headings : 'Orbitron'  (sans-serif, geometric, sci-fi display face)
-   Body     : 'Rajdhani'  (sans-serif, condensed, easy to read at length)
-   ============================================================ */
-
+/* Colors used on this page */
 :root {
   --space-black: #0a0e14;
   --panel-navy: #131a24;
@@ -44,7 +28,7 @@ body.about-page {
   margin: 0 auto;
 }
 
-/* Header */
+/* Header with logo, title, and tagline (flexbox) */
 .about-header {
   display: flex;
   align-items: center;
@@ -74,7 +58,7 @@ body.about-page {
   color: var(--dim-slate);
 }
 
-/* Site nav  */
+/* Navigation links */
 nav.site-nav {
   margin-top: 1.5rem;
   font-family: 'Orbitron', sans-serif;
@@ -93,7 +77,7 @@ nav.site-nav a:focus {
   text-decoration: underline;
 }
 
-/* portrait */
+/* Profile picture, floated right so text wraps around it */
 figure.creator {
   float: right;
   width: 180px;
@@ -115,7 +99,7 @@ figure.creator figcaption {
   color: var(--dim-slate);
 }
 
-/* Body */
+/* Main text content */
 .about-wrap h2 {
   font-family: 'Orbitron', sans-serif;
   color: var(--corps-green);
@@ -136,7 +120,7 @@ figure.creator figcaption {
   margin: 1.75rem 0;
 }
 
-/* Social links */
+/* Social media links (flexbox) */
 ul.social-links {
   list-style: none;
   padding: 0;
@@ -166,6 +150,7 @@ ul.social-links li a:focus {
   color: var(--space-black);
 }
 
+/* Footer */
 footer.about-footer {
   margin-top: 3rem;
   padding-top: 1.25rem;
